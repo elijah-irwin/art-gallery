@@ -1,0 +1,352 @@
+/* Body / Container Stuff*/
+body {
+    padding-top:70px;
+    font-family:Raleway,sans-serif;
+    height:100%;
+}
+/* ---------------------- */
+
+/* Navbar Stuff */
+.nav {
+    height:70px;
+}
+
+.leNav {
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size:1.2em;
+}
+
+.leNav li {
+    transition:.5s;
+}
+
+.leNav li:hover {
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.active2 {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.navbar-inverse {
+    background-color: #6D5C80;
+}
+
+.navbar {
+    border: none;
+    border-radius: none;
+    margin-bottom:none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0;
+}
+
+.navbar-inverse {
+    border-color: #080808;
+}
+
+.title {
+    font-size:3em;
+    letter-spacing: -2px;
+    font-family: Courgette, sans-serif;
+    padding-top: 25px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+#shopCart {
+    font-size: 1.3em;
+    padding:10px 20px;
+    color:white;
+    float:right;
+}
+
+#shopCart:hover {
+    cursor: pointer;
+}
+/* ---------------------- */
+
+/* Dropdown Bar Stuff */
+
+.underbar {
+    background-color: #C16D87;
+    position: fixed;
+    width:100%;
+}
+
+form select {
+    font-size: 1.3em;
+    background:none;
+    border:0px;
+    outline:none;
+    padding:11px 10px 10px 10px;
+    width:150px;
+}
+
+form select:hover {
+    cursor: pointer;
+}
+
+.searchBar {
+    float: right;
+    padding-top: 6px;
+    padding-right: 20px;
+    font-size:1.2em;
+}
+
+.searchBar button {
+    background-color: #C16D87;
+    color:white;
+    border:none;
+    transition: .5s;
+    padding:5px 10px;
+}
+
+.searchBar button:hover {
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.searchBar input {
+    background-color: #C16D87;
+    color:white;
+    border:none;
+    border-bottom: 2px solid white;
+    width: 210px; 
+    transition: .5s;
+}
+
+.searchBar input:hover {
+    border-bottom:2px solid #6D5C80;
+}
+
+.searchBar input:focus {
+    border-bottom:2px solid #6D5C80;
+    outline:none;
+}
+
+::placeholder {
+    color:black;
+    opacity: .8;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:black;
+    opacity: .8;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:black;
+    opacity: .8;
+}
+
+/* --------------------------- */
+
+/* Main Content Page Display Stuff*/
+.contentHeader {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.data {
+    padding:20px;
+}
+
+.dataHeader {
+    padding:20px;
+}
+
+.right {
+    padding:15px; 
+    color:black;
+    font-size: 1.3em;  
+}
+
+#photo {
+    width: 90%;
+    border-radius: 2px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#name {
+    font-size: 2em;
+}
+
+#name:hover {
+    cursor: pointer;
+}
+
+.addToCart {
+
+}
+
+/* --------------------------------------------- */
+
+/* Modal Stuff for Dropdown Box */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 55%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatetop;
+    animation-duration: 0.6s
+}
+
+#info {
+    font-size:1.3em;
+    padding:20px;
+    text-decoration-style: bold;
+    display: inline-block;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 40px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 5px 16px;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.modal-body {
+    padding: 16px 16px;
+    background-color: white;
+    display:inline-block;
+    width:100%;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+    border:none;
+}
+
+/* ------------------------------------------------ */
+
+/* Shopping Cart Page Stuff */
+#shoppingTitle {
+    padding-top:60px;
+}
+
+#shoppingItems {
+    width:100%;
+    font-size:1.3em;
+}
+
+.cartHeader {
+    font-size: 1em;
+}
+
+#itemBorder {
+    border-top:1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.removeItem {
+    background-color: #EB5A46;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    border:1px solid #EB5A46;
+}
+
+#subtotal {
+    font-size:1.3em;
+    padding:5px;
+}
+
+#checkout {
+    font-size:1.1em;
+    margin:5px;
+}
+
+#modalTable {
+    font-size:1.3em;
+    border-bottom: 1px solid black;
+    margin-bottom:10px;
+}
+
+#modalTable th {
+    border-bottom:1px solid black;
+    padding:7px;
+}
+
+#modalTable td {
+    padding:7px;
+}
+
+.modalHeadlines {
+    font-size:2em;
+    padding:10px 0px;
+}
+
+.shippingInfo form {
+    font-size:1.2em;
+}
+
+.col-md-6 {
+    padding-left: 30px;
+}
+
+.costInfo {
+    font-size:1.2em;
+    padding: 2px 5px;
+}
