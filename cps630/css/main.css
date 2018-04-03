@@ -350,3 +350,8 @@ form select:hover {
     font-size:1.2em;
     padding: 2px 5px;
 }
+
+/* About Us Page */
+.jumbotron {
+    margin-top: 75px;
+}

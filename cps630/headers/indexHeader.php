@@ -36,7 +36,7 @@
 			<div class="collapse navbar-collapse" id="bs-nav-demo">
 				<ul class="nav navbar-nav navbar-right leNav">
 					<li><a href="index.php">Home</a></li>
-					<li><a href="#">About Us</a></li>
+					<li><a href="about.php">About Us</a></li>
 					<li><a href="#">Blogs</a></li>
 					<li><a href="displayShoppingCart.php">Your Cart <i class="fas fa-shopping-cart"></i></a></li>
 				</ul>

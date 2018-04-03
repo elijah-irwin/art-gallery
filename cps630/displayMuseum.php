@@ -6,18 +6,7 @@
 
 <?php 
 
-// info to connect to db
-$servername = "localhost";
-$username = "root";
-$password = "cps630group43";
-$dbname = "cps630";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'scripts/dbconnect.php';
 
 $value = $_POST['MuseumId'];
 // make query for the searching of the function

@@ -7,18 +7,7 @@
 ?>
 
 <?php 
-// info to connect to db
-$servername = "localhost";
-$username = "root";
-$password = "cps630group43";
-$dbname = "cps630";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'scripts/dbconnect.php';
 
 $value = $_POST['item'];
 // make query for the searching of the function
@@ -66,18 +55,7 @@ $conn->close();
 
 // Artist Stuff --------------------------------------------------------------------------------
 
-// info to connect to db
-$servername = "localhost";
-$username = "root";
-$password = "cps630group43";
-$dbname = "cps630";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'scripts/dbconnect.php';
 
 $value = $_POST['item'];
 // make query for the searching of the function
@@ -127,18 +105,7 @@ $conn->close();
 
 // Museum Stuff --------------------------------------------------------------
 
-// info to connect to db
-$servername = "localhost";
-$username = "root";
-$password = "cps630group43";
-$dbname = "cps630";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'scripts/dbconnect.php';
 
 $value = $_POST['item'];
 // make query for the searching of the function
